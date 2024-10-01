@@ -1,0 +1,209 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.container-flex {
+  display: flex;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.item-flex {
+  background-color: #2196f3;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* 2. flex-direction */
+.direcao-linha {
+  flex-direction: row;
+}
+
+.direcao-coluna {
+  flex-direction: column;
+}
+
+/* 3. flex-wrap */
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Definir largura para causar wrap */
+.wrap .item-flex,
+.nowrap .item-flex {
+  flex: 0 0 30%;
+}
+
+/* 4. justify-content */
+.justificar-inicio {
+  justify-content: flex-start;
+}
+
+.justificar-fim {
+  justify-content: flex-end;
+}
+
+.justificar-centro {
+  justify-content: center;
+}
+
+.justificar-space-between {
+  justify-content: space-between;
+}
+
+.justificar-space-around {
+  justify-content: space-around;
+}
+
+.justificar-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* 5. align-items */
+.alinhar-stretch {
+  align-items: stretch;
+}
+
+.alinhar-inicio {
+  align-items: flex-start;
+}
+
+.alinhar-fim {
+  align-items: flex-end;
+}
+
+.alinhar-centro {
+  align-items: center;
+}
+
+.alinhar-baseline {
+  align-items: baseline;
+}
+
+.alto {
+  height: 100px;
+}
+
+.baixo {
+  height: 50px;
+}
+
+/* 6. align-content */
+.alinhar-conteudo-inicio {
+  align-content: flex-start;
+  height: 200px; /* Definir altura para demonstrar align-content */
+}
+
+.alinhar-conteudo-inicio .caixa {
+  flex: 0 0 30%;
+}
+
+.caixa {
+  background-color: #4caf50;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* 7. order */
+.exemplo-order .item-flex {
+  flex: 1;
+}
+
+.ordem1 {
+  order: 1;
+}
+
+.ordem2 {
+  order: 2;
+}
+
+.ordem3 {
+  order: 3;
+}
+
+/* 8. flex-grow */
+.exemplo-grow .item-flex {
+  flex-basis: 100px;
+}
+
+.crescer1 {
+  flex-grow: 1;
+}
+
+.crescer2 {
+  flex-grow: 2;
+}
+
+/* 9. align-self */
+.exemplo-align-self {
+  align-items: flex-start; /* Definir padrão para comparação */
+  height: 200px;
+}
+
+.exemplo-align-self .item-flex {
+  flex: 1;
+  margin: 5px;
+}
+
+.self-inicio {
+  align-self: flex-start;
+}
+
+.self-centro {
+  align-self: center;
+}
+
+.self-fim {
+  align-self: flex-end;
+}
+
+/* 10. Exemplo Prático: Menu de Navegação */
+.menu-nav {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu-nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.menu-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 11. Exemplo Prático: Layout Responsivo */
+.responsivo {
+  flex-wrap: wrap;
+}
+
+.responsivo .caixa {
+  flex: 1 1 200px;
+  margin: 10px;
+}

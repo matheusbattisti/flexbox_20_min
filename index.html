@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplos de Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- 1. Container Flex e Itens Flex -->
+    <section>
+      <h2>Container Flex e Itens Flex</h2>
+      <div class="container-flex exemplo1">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 2. flex-direction -->
+    <section>
+      <h2>flex-direction</h2>
+      <h3>Linha (padrão)</h3>
+      <div class="container-flex direcao-linha">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>Coluna</h3>
+      <div class="container-flex direcao-coluna">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 3. flex-wrap -->
+    <section>
+      <h2>flex-wrap</h2>
+      <h3>Wrap</h3>
+      <div class="container-flex wrap">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+        <div class="item-flex">Item 4</div>
+        <div class="item-flex">Item 5</div>
+        <div class="item-flex">Item 6</div>
+      </div>
+      <h3>Nowrap (padrão)</h3>
+      <div class="container-flex nowrap">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+        <div class="item-flex">Item 4</div>
+        <div class="item-flex">Item 5</div>
+        <div class="item-flex">Item 6</div>
+      </div>
+    </section>
+
+    <!-- 4. justify-content -->
+    <section>
+      <h2>justify-content</h2>
+      <h3>flex-start (padrão)</h3>
+      <div class="container-flex justificar-inicio">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="container-flex justificar-fim">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>center</h3>
+      <div class="container-flex justificar-centro">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="container-flex justificar-space-between">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="container-flex justificar-space-around">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-evenly</h3>
+      <div class="container-flex justificar-space-evenly">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 5. align-items -->
+    <section>
+      <h2>align-items</h2>
+      <h3>stretch (padrão)</h3>
+      <div class="container-flex alinhar-stretch">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>flex-start</h3>
+      <div class="container-flex alinhar-inicio">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="container-flex alinhar-fim">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>center</h3>
+      <div class="container-flex alinhar-centro">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>baseline</h3>
+      <div class="container-flex alinhar-baseline">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 6. align-content -->
+    <section>
+      <h2>align-content</h2>
+      <h3>flex-start</h3>
+      <div class="container-flex wrap alinhar-conteudo-inicio">
+        <div class="item-flex caixa">1</div>
+        <div class="item-flex caixa">2</div>
+        <div class="item-flex caixa">3</div>
+        <div class="item-flex caixa">4</div>
+        <div class="item-flex caixa">5</div>
+        <div class="item-flex caixa">6</div>
+        <div class="item-flex caixa">7</div>
+        <div class="item-flex caixa">8</div>
+      </div>
+    </section>
+
+    <!-- 7. order -->
+    <section>
+      <h2>order</h2>
+      <div class="container-flex exemplo-order">
+        <div class="item-flex ordem3">Item 1 (order: 3)</div>
+        <div class="item-flex ordem2">Item 2 (order: 2)</div>
+        <div class="item-flex ordem1">Item 3 (order: 1)</div>
+      </div>
+    </section>
+
+    <!-- 8. flex-grow -->
+    <section>
+      <h2>flex-grow, flex-shrink, flex-basis, flex</h2>
+      <h3>flex-grow</h3>
+      <div class="container-flex exemplo-grow">
+        <div class="item-flex crescer1">Item 1</div>
+        <div class="item-flex crescer2">Item 2</div>
+        <div class="item-flex crescer1">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 9. align-self -->
+    <section>
+      <h2>align-self</h2>
+      <div class="container-flex exemplo-align-self">
+        <div class="item-flex self-inicio">Item 1 (flex-start)</div>
+        <div class="item-flex self-centro">Item 2 (center)</div>
+        <div class="item-flex self-fim">Item 3 (flex-end)</div>
+      </div>
+    </section>
+
+    <!-- 10. Exemplo Prático: Menu de Navegação -->
+    <section>
+      <h2>Exemplo Prático: Menu de Navegação</h2>
+      <nav class="menu-nav">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </nav>
+    </section>
+
+    <!-- 11. Exemplo Prático: Layout Responsivo -->
+    <section>
+      <h2>Exemplo Prático: Layout Responsivo</h2>
+      <div class="container-flex responsivo">
+        <div class="item-flex caixa">Item 1</div>
+        <div class="item-flex caixa">Item 2</div>
+        <div class="item-flex caixa">Item 3</div>
+        <div class="item-flex caixa">Item 4</div>
+        <div class="item-flex caixa">Item 5</div>
+        <div class="item-flex caixa">Item 6</div>
+        <div class="item-flex caixa">Item 7</div>
+        <div class="item-flex caixa">Item 8</div>
+      </div>
+    </section>
+  </body>
+</html>
